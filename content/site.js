@@ -13,7 +13,7 @@ PL.site = {
 
   contact: {
     email: "ritul.sawant11@gmail.com",
-    linkedin: "https://www.linkedin.com/in/ritulsawant",
+    linkedin: "https://www.linkedin.com/in/ritulsawant/",
     location: "Stirling, Scotland, UK",
     phone: "07768088697",
     cv: "assets/ritul-sawant-cv.pdf"

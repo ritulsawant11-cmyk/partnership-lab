@@ -333,8 +333,7 @@ window.PL = window.PL || {};
     } else if (kind === "email") {
       inner = '<a href="mailto:' + esc(value) + '">' + esc(value) + "</a>";
     } else if (kind === "linkedin") {
-      var displayUrl = esc(value).replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
-      inner = '<a href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + displayUrl + ' &nearr;</a>';
+      inner = '<a href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + esc(value) + ' &nearr;</a>';
     } else if (kind === "phone") {
       inner = '<a href="tel:' + esc(String(value).replace(/\s+/g, "")) + '">' + esc(value) + "</a>";
     } else if (kind === "location") {

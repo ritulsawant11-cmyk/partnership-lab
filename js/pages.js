@@ -692,7 +692,7 @@ window.PL = window.PL || {};
           '<li class="contact-item"><span class="contact-label">Email</span><a href="mailto:' + esc(site.contact.email) + '">' + esc(site.contact.email) + '</a></li>' +
           '<li class="contact-item"><span class="contact-label">Phone</span><a href="tel:' + esc(String(site.contact.phone).replace(/\s+/g, "")) + '">' + esc(site.contact.phone) + '</a></li>' +
           '<li class="contact-item"><span class="contact-label">Location</span><span>' + esc(site.contact.location) + '</span></li>' +
-          '<li class="contact-item"><span class="contact-label">LinkedIn</span><a href="' + esc(site.contact.linkedin) + '" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/ritulsawant &nearr;</a></li>' +
+          '<li class="contact-item"><span class="contact-label">LinkedIn</span><a href="' + esc(site.contact.linkedin) + '" target="_blank" rel="noopener noreferrer">' + esc(site.contact.linkedin) + ' &nearr;</a></li>' +
           '<li class="contact-item contact-item--cv"><span class="contact-label">CV</span><div><a href="' + esc(site.contact.cv) + '" class="btn btn--small" target="_blank" rel="noopener">Download CV</a></div></li>' +
         '</ul>' +
         '<p class="section-note" style="margin-top: 2.5rem;">' + esc(site.disclaimer) + '</p>' +

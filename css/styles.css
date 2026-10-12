@@ -888,8 +888,43 @@ ul, ol { padding-left: 1.25em; margin: 0 0 1.1em; }
   font-weight: 600;
 }
 
+.ascii-diagram {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 1.25rem 0;
+  white-space: pre;
+}
+
+blockquote.callout--quote {
+  border-left: 3px solid var(--teal);
+  background: var(--surface-alt);
+  padding: 0.85rem 1.25rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 1.25rem 0;
+}
+
+blockquote.callout--quote p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+hr.rule {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
 @media print {
   .site-header, .site-footer, .detail-aside, .how-to-read, .btn { display: none !important; }
   body { background: #fff; }
 }
+
 

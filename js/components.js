@@ -36,20 +36,31 @@ window.PL = window.PL || {};
         return '<a href="' + url + '"' + external + ">" + label + "</a>";
       });
 
-    // Display formulas: $$\text{A} = \frac{\text{B}}{\text{C}}$$
-    res = res.replace(/\$\$\\text\{([^}]+)\}\s*=\s*\\frac\{(?:\\text\{)?([^}]+)\}?\}\{(?:\\text\{)?([^}]+)\}?\}\$\$/g, function (_, lhs, num, den) {
-      return '<span class="formula-display"><span class="formula-lhs">' + lhs + '</span> <span class="formula-eq">=</span> <span class="formula-frac"><span class="formula-num">' + num + '</span><span class="formula-den">' + den + '</span></span></span>';
+    function cleanMath(s) {
+      return s.replace(/\\text\{([^}]+)\}/g, "$1")
+              .replace(/_\{([^}]+)\}/g, "<sub>$1</sub>")
+              .replace(/\\&/g, "&amp;")
+              .replace(/\\/g, "")
+              .trim();
+    }
+
+    // Display formulas: $$\text{A} = \frac{\text{B}}{\text{C}}$$ (supports nested braces)
+    res = res.replace(/\$\$\\text\{([^}]+)\}\s*=\s*\\frac\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\}|\{(?:[^{}]|\{[^{}]*\})*\})*)\}\$\$/g, function (_, lhs, num, den) {
+      return '<span class="formula-display"><span class="formula-lhs">' + cleanMath(lhs) + '</span> <span class="formula-eq">=</span> <span class="formula-frac"><span class="formula-num">' + cleanMath(num) + '</span><span class="formula-den">' + cleanMath(den) + '</span></span></span>';
     });
 
     // Inline fractions: $\frac{\text{A}}{\text{B}}$
-    res = res.replace(/\$\\frac\{(?:\\text\{)?([^}]+)\}?\}\{(?:\\text\{)?([^}]+)\}?\}\$/g, function (_, num, den) {
-      return '<span class="formula-frac"><span class="formula-num">' + num + '</span><span class="formula-den">' + den + '</span></span>';
+    res = res.replace(/\$\\frac\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\}|\{(?:[^{}]|\{[^{}]*\})*\})*)\}\$/g, function (_, num, den) {
+      return '<span class="formula-frac"><span class="formula-num">' + cleanMath(num) + '</span><span class="formula-den">' + cleanMath(den) + '</span></span>';
     });
 
     // Percentile subscript: $P_{95}$ or P_{95}
     res = res.replace(/\$?P_\{95\}\$?|\$P95\$/g, "P<sub>95</sub>");
 
-    // LaTeX cleanup for ranges & thresholds like $< 15\%$, $> 25\%$, $< 3.0\text{ seconds}$
+    // Cohort size variables: $N = 5,000$
+    res = res.replace(/\$N\s*=\s*([0-9,]+)\$/g, "<em>N</em> = $1");
+
+    // LaTeX cleanup for ranges & thresholds like $< 15\%$, $> 25\%$, $< 3.0\text{ seconds}$, $< £100$
     res = res.replace(/\$(&[lg]t;[^$]+)\$/g, function (_, m) {
       return m.replace(/\\text\{([^}]+)\}/g, "$1").replace(/\\%/g, "%").replace(/\\/g, "").trim();
     });
@@ -88,10 +99,34 @@ window.PL = window.PL || {};
         return tableHtml;
       }
 
+      // Fenced code blocks or box diagrams
+      if (/^```/.test(lines[0]) || lines[0].indexOf("┌") !== -1) {
+        var codeLines = lines.filter(function (l) { return !/^```/.test(l); });
+        return '<pre class="ascii-diagram"><code>' + esc(codeLines.join('\n')) + '</code></pre>';
+      }
+
+      // Blockquotes starting with >
+      if (lines.every(function (l) { return /^>\s?/.test(l); })) {
+        return '<blockquote class="callout--quote"><p>' + inline(lines.map(function (l) { return l.replace(/^>\s?/, ''); }).join(' ')) + '</p></blockquote>';
+      }
+
+      // Horizontal rule
+      if (lines.length === 1 && /^---+$/.test(lines[0])) {
+        return '<hr class="rule">';
+      }
+
       if (lines.every(function (l) { return /^[-*] /.test(l); })) {
         return "<ul>" + lines.map(function (l) { return "<li>" + inline(l.slice(2)) + "</li>"; }).join("") + "</ul>";
       }
 
+      if (/^# /.test(lines[0])) {
+        return '<h3 class="sub-title">' + inline(lines[0].slice(2)) + '</h3>' +
+          (lines.length > 1 ? '<p>' + inline(lines.slice(1).join(' ')) + '</p>' : '');
+      }
+      if (/^## /.test(lines[0])) {
+        return '<h3 class="sub-title">' + inline(lines[0].slice(3)) + '</h3>' +
+          (lines.length > 1 ? '<p>' + inline(lines.slice(1).join(' ')) + '</p>' : '');
+      }
       if (/^### /.test(lines[0])) {
         return '<h3 class="sub-title">' + inline(lines[0].slice(4)) + '</h3>' +
           (lines.length > 1 ? '<p>' + inline(lines.slice(1).join(' ')) + '</p>' : '');

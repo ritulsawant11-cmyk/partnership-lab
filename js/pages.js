@@ -108,6 +108,20 @@ window.PL = window.PL || {};
         ) : ui.todo()) +
       "</div></section>" +
 
+      // All Case Studies Grid on Home Page
+      '<section class="band band--tight"><div class="container">' +
+        '<div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">' +
+          '<div>' +
+            '<p class="eyebrow" style="margin:0;">Recent Analyses</p>' +
+            '<h2 class="section-title" style="margin:0;">All Case Studies</h2>' +
+          '</div>' +
+          '<a class="btn btn--ghost btn--small" href="#/case-studies">Filter &amp; search &rarr;</a>' +
+        '</div>' +
+        '<div class="card-grid">' +
+          PL.caseStudies.map(function (c) { return ui.projectCard(c, "case"); }).join("") +
+        '</div>' +
+      "</div></section>" +
+
       // Two Ways I Explore Partnerships
       '<section class="band band--alt"><div class="container">' +
         '<h2 class="section-title">Two ways I explore partnerships</h2>' +

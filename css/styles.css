@@ -843,7 +843,53 @@ ul, ol { padding-left: 1.25em; margin: 0 0 1.1em; }
   .deck-btn { min-width: 88px; }
 }
 
+/* ---------- Formula & Math Display ---------- */
+
+.formula-display {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin: 0.85rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.formula-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.2;
+  margin: 0 0.25rem;
+}
+
+.formula-num {
+  border-bottom: 1.5px solid currentColor;
+  padding: 0 0.35rem 0.15rem;
+}
+
+.formula-den {
+  padding: 0.15rem 0.35rem 0;
+}
+
+.formula-eq {
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.formula-lhs {
+  font-weight: 600;
+}
+
 @media print {
   .site-header, .site-footer, .detail-aside, .how-to-read, .btn { display: none !important; }
   body { background: #fff; }
 }
+

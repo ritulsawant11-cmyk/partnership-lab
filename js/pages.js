@@ -254,13 +254,15 @@ window.PL = window.PL || {};
       ["executive-summary", "— Executive summary"],
       ["interpretation", "— My interpretation"],
       ["risks", "— Risks and limitations"],
-      ["lessons", "— Lessons learned"],
-      ["presentation-deck", "— The partnership in 10 slides"],
-      ["sources", "Sources & reviewed date", true]
+      ["lessons", "— Lessons learned"]
     ];
+    if (customSecMap["presentation-deck"]) {
+      items.push(["presentation-deck", "— The partnership in 10 slides"]);
+    }
+    items.push(["sources", "Sources & reviewed date", true]);
 
     // Partnership visual diagram data
-    var diagramData = {
+    var diagramData = p.diagram || {
       company1: {
         name: "Standard Life",
         capabilities: [
@@ -283,7 +285,7 @@ window.PL = window.PL || {};
       }
     };
 
-    var conclusionText =
+    var conclusionText = p.conclusion ||
       "Test enhanced onboarding before wider rollout. Evaluate activation uplift, sustained usage, " +
       "incremental cost per additional activation, and customer suitability safeguards—not digital engagement alone.";
 
@@ -300,7 +302,7 @@ window.PL = window.PL || {};
           '<p class="breadcrumb"><a href="#/case-studies">&larr; All case studies</a> &middot; <span class="eyebrow" style="margin:0;">' + esc(p.sector) + '</span></p>' +
           ui.kindTag("case") +
           '<h1 tabindex="-1">' + esc(p.title) + "</h1>" +
-          '<p class="lede" style="font-size:1.35rem; font-weight:600; color:var(--ink-soft); margin-bottom:.5rem;">Connecting workplace pensions with everyday financial life.</p>' +
+          (p.subtitle ? '<p class="lede" style="font-size:1.35rem; font-weight:600; color:var(--ink-soft); margin-bottom:.5rem;">' + esc(p.subtitle) + '</p>' : '') +
           '<p class="lede">' + ui.inline(p.summary) + "</p>" +
           '<div class="btn-row" style="margin-top: 1.25rem; margin-bottom: 1.5rem;">' +
             '<a class="btn btn--small" href="#ch-01" data-scroll-to="ch-01">Read the analysis &darr;</a>' +

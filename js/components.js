@@ -26,7 +26,8 @@ window.PL = window.PL || {};
 
   // Inline Markdown: **bold**, *italic*, [text](url). Input is escaped first.
   function inline(text) {
-    return esc(text)
+    var res = esc(text)
+      .replace(/&lt;br\s*\/?&gt;/g, "<br>")
       .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
       .replace(/\*(.+?)\*/g, "<em>$1</em>")
       .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, label, url) {
@@ -34,6 +35,31 @@ window.PL = window.PL || {};
         var external = /^https?:/.test(url) ? ' target="_blank" rel="noopener noreferrer"' : "";
         return '<a href="' + url + '"' + external + ">" + label + "</a>";
       });
+
+    // Display formulas: $$\text{A} = \frac{\text{B}}{\text{C}}$$
+    res = res.replace(/\$\$\\text\{([^}]+)\}\s*=\s*\\frac\{(?:\\text\{)?([^}]+)\}?\}\{(?:\\text\{)?([^}]+)\}?\}\$\$/g, function (_, lhs, num, den) {
+      return '<span class="formula-display"><span class="formula-lhs">' + lhs + '</span> <span class="formula-eq">=</span> <span class="formula-frac"><span class="formula-num">' + num + '</span><span class="formula-den">' + den + '</span></span></span>';
+    });
+
+    // Inline fractions: $\frac{\text{A}}{\text{B}}$
+    res = res.replace(/\$\\frac\{(?:\\text\{)?([^}]+)\}?\}\{(?:\\text\{)?([^}]+)\}?\}\$/g, function (_, num, den) {
+      return '<span class="formula-frac"><span class="formula-num">' + num + '</span><span class="formula-den">' + den + '</span></span>';
+    });
+
+    // Percentile subscript: $P_{95}$ or P_{95}
+    res = res.replace(/\$?P_\{95\}\$?|\$P95\$/g, "P<sub>95</sub>");
+
+    // LaTeX cleanup for ranges & thresholds like $< 15\%$, $> 25\%$, $< 3.0\text{ seconds}$
+    res = res.replace(/\$(&[lg]t;[^$]+)\$/g, function (_, m) {
+      return m.replace(/\\text\{([^}]+)\}/g, "$1").replace(/\\%/g, "%").replace(/\\/g, "").trim();
+    });
+    res = res.replace(/\$([0-9.]+(?:%|s|\\text\{[^}]+\})?\s*-\s*[0-9.]+(?:%|s|\\text\{[^}]+\})?)\$/g, function (_, m) {
+      return m.replace(/\\text\{([^}]+)\}/g, "$1").replace(/\\%/g, "%").replace(/\\/g, "").trim();
+    });
+    res = res.replace(/\\text\{([^}]+)\}/g, "$1");
+    res = res.replace(/\\%/g, "%");
+
+    return res;
   }
 
   // Block Markdown: paragraphs, lists, headings (###, ####), and markdown tables (| a | b |).

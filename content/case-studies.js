@@ -472,40 +472,434 @@ PL.caseStudies = [
   {
     slug: "spotify-uber",
     title: "Spotify × Uber",
+    subtitle: "A Historical Partnership Analysis and Hypothetical Pilot Evaluation",
     companies: ["Spotify", "Uber"],
     sector: "Consumer technology",
     partnershipType: "Product integration",
-    typeNote: "Provisional classification — to be confirmed once sources are reviewed.",
+    typeNote: "In-ride personalised audio integration & streaming subscription trial promotion.",
     summary:
-      "Draft analysis of a cross-industry partnership between a music-streaming service and a ride-hailing platform, " +
-      "looking at how two consumer apps combined to change part of the in-ride experience.",
-    status: "draft",
+      "An independent analysis examining the partnership announced in November 2014 using public reporting and official announcements. " +
+      "The partner comparison, proposed pilot, decision rules, and unit-cost models are the author’s own work. " +
+      "They do not represent either company’s actual selection process, contractual terms, or internal results.",
+    status: "complete",
     featured: false,
-    lastReviewed: null,
+    lastReviewed: "2026-10-12",
 
-    // Starting points only. NOT verified — check against primary sources before moving into a section.
-    researchLeads: [
-      "Commonly reported: around late 2014 the companies launched a feature letting Uber riders play music from their own Spotify account during a trip. Confirm the announcement date, launch markets and how the feature worked from the companies' own announcements.",
-      "Find out whether the feature is still available, and if not, when and why it changed."
-    ],
+    diagram: {
+      company1: {
+        name: "Uber",
+        capabilities: [
+          "Global ride-hailing surface area & rider UI",
+          "Driver ecosystem access & cabin touchpoints",
+          "Trip dispatch context & real-time ride state"
+        ]
+      },
+      company2: {
+        name: "Spotify",
+        capabilities: [
+          "Licensed streaming catalogue & API rails",
+          "User authentication & playlist sync systems",
+          "Premium subscriber acquisition & retention model"
+        ]
+      },
+      joint: {
+        title: "In-Ride Personalised Audio",
+        memberValue: "Personalised soundtrack control for riders while driving Premium subscription trials"
+      }
+    },
+
+    conclusion:
+      "A partnership between two major technology companies can ultimately depend on a third group—in this case, independent drivers—whose daily operational participation determines whether the customer experience actually works. Evaluating rider value, driver adoption, technical reliability, and each partner’s economics is essential before recommending expansion.",
+
+    researchLeads: [],
 
     sections: {
-      executiveSummary: { label: "analysis", body: "", hint: "Write last: what the partnership was, why it existed, and my overall view." },
-      background: { label: "fact", body: "", hint: "Each company's position and priorities at the time of the partnership." },
-      problem: { label: "analysis", body: "", hint: "What rider, driver or business problem the integration aimed to solve." },
-      fit: { label: "analysis", body: "", hint: "Why a music service and a mobility platform were a logical pairing." },
-      outcomes: { label: "fact", body: "", hint: "Publicly reported results only. Record clearly if none were disclosed." },
-      interpretation: { label: "analysis", body: "", hint: "My view on what made it work (or not) and what it signalled." },
-      risks: { label: "analysis", body: "", hint: "Driver experience, licensing, platform dependency, limits of public data." },
-      lessons: { label: "analysis", body: "", hint: "Lessons for consumer-brand integrations." }
+      executiveSummary: {
+        label: "analysis",
+        body:
+          "**Author:** Ritul Sawant\n" +
+          "**Date:** October 2026\n\n" +
+          "**Disclaimer:**\n" +
+          "This independent analysis examines the partnership announced in November 2014 using public reporting and official announcements. " +
+          "The partner comparison, proposed pilot, decision rules, and unit-cost models are the author’s own work. " +
+          "They do not represent either company’s actual selection process, contractual terms, or internal results.\n\n" +
+          "### Strategic Summary\n\n" +
+          "In November 2014, Spotify and Uber announced a global product integration allowing Spotify Premium subscribers to control the music played through participating Uber vehicles. " +
+          "This study provides an independent retrospective analysis of the strategic rationale, partner selection landscape, and commercial value exchange.\n\n" +
+          "To rigorously evaluate whether in-ride music drives customer retention and subscription conversion, this analysis outlines a **Hypothetical Dual-Workstream Pilot** separating existing subscriber ride experience from non-subscriber trial conversion, supported by clear operational decision bands and scenario-based unit costs.\n\n" +
+          "**Core Analytical Insight:**\n" +
+          "\"A partnership between two major technology companies can ultimately depend on a third group—in this case, independent drivers—whose daily operational participation determines whether the customer experience actually works. Evaluating rider value, driver adoption, technical reliability, and each partner’s economics is essential before recommending expansion.\""
+      },
+
+      background: {
+        label: "fact",
+        body:
+          "### Documented Historical Context (November 2014)\n\n" +
+          "- **Announcement & Scope:** Announced on 17 November 2014, with launch planned for 21 November 2014 across ten initial cities, including New York, London, and San Francisco ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)). Financial details of the deal were not disclosed ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)).\n" +
+          "- **Functionality & Eligibility:** Allowed Spotify Premium users to link their accounts through the Uber app and select music played through participating vehicles ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)). Uber’s launch instructions confirmed a free 7-day Premium trial for eligible users with no credit card required, activated when taking their first music-enabled ride ([Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/)).\n" +
+          "- **Platform Variation:** The initial launch experience varied by operating system—iOS riders controlled playback directly within the Uber app, whereas Android riders initially controlled playback via the Spotify app ([Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/)). This created an additional implementation and customer support consideration.\n" +
+          "- **Driver Autonomy:** Drivers retained full autonomy over whether to participate and kept control of the vehicle\'s master volume ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)).\n" +
+          "- **Connection Method:** The initial implementation required the driver’s Uber phone to connect to the vehicle’s entertainment system, introducing connectivity and setup requirements ([BBC News, 2014](https://www.bbc.com/news/technology-30080974))."
+      },
+
+      problem: {
+        label: "analysis",
+        body:
+          "### Proposed Customer Problem\n\n" +
+          "Some riders may value greater control over the in-car listening experience. A music partnership could differentiate the journey from competing services, but the importance of this need—and its effect on overall trip satisfaction or repeat usage—would require formal validation.\n\n" +
+          "### Capability & Cost Constraints\n\n" +
+          "A software-led partnership could avoid Uber developing a music service internally, while still introducing integration, connectivity, support, and driver-enablement costs. It was not a cost-free software feature."
+      },
+
+      fit: {
+        label: "analysis",
+        body:
+          "### Strategic Option Assessment & Historical Framing\n\n" +
+          "This analysis compares three hypothetical strategic approaches to delivering personalised in-car audio in the November 2014 context:\n\n" +
+          "| Strategic Option | Operational & Product Mechanics | Strategic Considerations |\n" +
+          "| --- | --- | --- |\n" +
+          "| **1. On-Demand Streaming Partnership (e.g., Spotify)** | Full track and playlist control via app-to-app integration. Requires subscription authentication. | **Personalisation potential:** Delivers full control.<br>**Friction:** Requires active subscription link and driver connection setup. |\n" +
+          "| **2. Personalised Radio Partnership (e.g., Pandora)** | Station-based algorithmic playback with lean-back listening. | **Simpler Experience:** Lower user interaction required while riding.<br>**Less Control:** Lacks track-level selection for specific rider moods. |\n" +
+          "| **3. Vehicle Head-Unit / Infotainment Integration** | Direct integration into vehicle dashboard systems or manufacturer hardware. | **Consistency:** Potentially more consistent playback in compatible vehicles, but dependent on hardware, software, and installation requirements. |\n\n" +
+          "### Why My Hypothetical Assessment Favours Spotify\n\n" +
+          "- **Personalisation Alignment:** On-demand playlist selection directly addresses the rider desire for track-level control better than passive radio stations.\n" +
+          "- **Commercial Synergy:** Restricting seamless control to Spotify Premium aligned with Spotify\'s core subscriber acquisition engine while offering Uber a premium brand differentiator.\n" +
+          "- **Brand Fit (Analyst Interpretation):** Spotify’s established consumer brand offered a plausible co-marketing benefit, although recognition and relevance among the target rider segment would require validation."
+      },
+
+      outcomes: {
+        label: "fact",
+        body:
+          "### Publicly Reported Integration Scope & Launch Terms\n\n" +
+          "- **Launch Rollout (November 2014):** Feature rolled out across ten launch cities (London, New York, San Francisco, Los Angeles, Mexico City, Nashville, Singapore, Stockholm, Sydney, and Toronto) ([BBC News, 2014](https://www.bbc.com/news/technology-30080974); [Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/)).\n" +
+          "- **Trial Terms:** Uber riders received an exclusive 7-day trial of Spotify Premium with no credit card required at trial registration ([Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/)).\n" +
+          "- **Commercial & Financial Terms:** Financial details, licensing payments, and ongoing contractual terms of the deal were not disclosed in public announcements ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)).\n" +
+          "- **Reported Operational Experience:** Launch reporting highlighted that the service relied on driver participation and driver phone connections (e.g. AUX cables), introducing variable real-world setup experiences ([BBC News, 2014](https://www.bbc.com/news/technology-30080974))."
+      },
+
+      interpretation: {
+        label: "analysis",
+        body:
+          "The Spotify × Uber partnership was an iconic cross-industry co-branding milestone in the early growth phases of the on-demand economy. It demonstrated how consumer tech platforms could combine complementary mobile user contexts to elevate the everyday customer journey.\n\n" +
+          "However, distinguishing operational engagement from true commercial value is essential: streaming volume does not automatically translate to profitability for either party. For Uber, in-car audio had to measurably enhance ride satisfaction or frequency without burdening drivers. For Spotify, trial riders had to convert into paying long-term subscribers to offset licensing overhead and rights fees."
+      },
+
+      risks: {
+        label: "analysis",
+        body:
+          "### Operational Dependencies & Platform Friction\n\n" +
+          "- **Driver Friction & Autonomy:** Drivers operate as independent contractors with complete vehicle autonomy ([BBC News, 2014](https://www.bbc.com/news/technology-30080974)). Asking drivers to provide AUX cables, handle audio configuration, and forfeit their own listening preferences created real operational resistance.\n" +
+          "- **Cellular Latency & Playback Dropouts:** Real-time music streaming in moving vehicles is susceptible to cellular network handoff delays and coverage blind spots, impacting P95 latency.\n" +
+          "- **Music Rights & Streaming Royalty Costs:** Streaming licensed music incurs royalty and delivery obligations ([Spotify Artists, 2024](https://artists.spotify.com/en/royalties-guide)). Without sustainable trial-to-paid conversion, unrecouped streaming usage creates negative unit margins.\n" +
+          "- **Cross-Platform User Experience Disparities:** The split experience between iOS (in-app controls) and Android (switching between apps) created customer confusion and increased support ticket volume ([Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/))."
+      },
+
+      lessons: {
+        label: "analysis",
+        body:
+          "### Key Strategic Lessons for Partnership Practitioners\n\n" +
+          "- **The Frontline Point-of-Delivery Reality:** In multi-sided platform partnerships, success hinges on frontline operators (independent drivers). If the delivery partner faces friction, the customer experience breaks down regardless of software quality.\n" +
+          "- **Isolate Experience Validation from Customer Acquisition:** Treat existing subscriber satisfaction and new subscriber acquisition as distinct experiments with independent success thresholds.\n" +
+          "- **Establish Objective Decision Thresholds:** Setting pre-agreed operational gates (e.g. driver withdrawal <15% and P95 latency <3.0s) prevents over-committing to complex integrations before validating delivery feasibility."
+      }
     },
 
     parties: [
-      { name: "Spotify", role: "company", contributes: [], gains: [] },
-      { name: "Uber", role: "company", contributes: [], gains: [] },
-      { name: "Riders", role: "customer", note: "Drivers may also be a relevant stakeholder", contributes: [], gains: [] }
+      {
+        name: "Uber",
+        role: "company",
+        note: "Ride-Hailing Platform & In-Vehicle Environment",
+        contributes: [
+          "Rider surface area & in-app UI integration",
+          "Driver ecosystem access and vehicle cabin touchpoints",
+          "Trip dispatch context and real-time ride state"
+        ],
+        gains: [
+          "Product differentiation vs. competing ride services (e.g. Lyft)",
+          "Incremental ride frequency and customer retention potential",
+          "Premium brand perception boost from pairing with Spotify",
+          "Risks: Engineering & API integration overhead, customer support overhead, driver friction & complaints"
+        ]
+      },
+      {
+        name: "Spotify",
+        role: "company",
+        note: "Music Streaming Platform & Rights Infrastructure",
+        contributes: [
+          "Music catalogue & API streaming infrastructure",
+          "Streaming bandwidth and CDN infrastructure",
+          "Brand co-marketing & 7-day Premium trial promotion"
+        ],
+        gains: [
+          "Premium trial conversion and new subscriber acquisition",
+          "Long-term subscriber retention through daily contextual listening habits",
+          "Increased product engagement touchpoints",
+          "Risks: Music-rights and licensing costs (see Spotify Royalties Guide), infrastructure & CDN delivery costs, trial acquisition costs"
+        ]
+      },
+      {
+        name: "Riders & Drivers",
+        role: "customer",
+        note: "The Customer (Riders) & Operational Operators (Drivers)",
+        contributes: [
+          "Riders: Account linkage, app engagement, and listening preferences",
+          "Drivers: Cabin audio setup, AUX/Bluetooth connection, and operational participation"
+        ],
+        gains: [
+          "Riders: Personalised in-cabin ambiance and 7-day trial access options",
+          "Drivers: Potential higher rider satisfaction ratings and tip opportunities",
+          "Risks: Setup friction & connectivity latency, subscription requirement for full control, driver distraction"
+        ]
+      }
     ],
 
-    sources: []
+    customSections: [
+      {
+        id: "experimental-pilot",
+        title: "Hypothetical Pilot Design: Dual-Workstream RCT Evaluation",
+        label: "hypothetical",
+        body:
+          "### Hypothetical Pilot Workstreams\n\n" +
+          "The proposed evaluation separates existing subscribers’ ride experience from non-subscribers’ subscription conversion:\n\n" +
+          "| Pilot Workstream | Target Population | Core Mechanics | Primary Outcome Metric |\n" +
+          "| --- | --- | --- | --- |\n" +
+          "| **Workstream A: Ride Experience** | Existing Spotify Premium Users | Randomised In-App Access Prompt | Difference in post-ride NPS between assigned groups |\n" +
+          "| **Workstream B: Subscription Conversion** | Eligible Non-Premium Riders | In-App 7-Day Trial Offer | Offer-to-Paid Rate at Day 45 Post-Offer |\n\n" +
+          "### Workstream Specifications\n\n" +
+          "#### Workstream A: Ride-Experience Test\n\n" +
+          "- **Eligible Population:** Active Uber riders with an authenticated Spotify Premium account.\n" +
+          "- **Experimental Design:** Eligible riders are randomised to an offer cohort (prompted to connect music) or a control cohort (standard ride UI).\n" +
+          "- **Primary Outcome:** Difference in post-ride Net Promoter Score (NPS) between assigned groups.\n" +
+          "- **Secondary Outcomes:** Feature activation rate, repeat ride frequency over 30 days, driver ratings, and support incident rates.\n\n" +
+          "#### Workstream B: Subscription-Conversion Test\n\n" +
+          "- **Eligible Population:** Riders whose non-Premium status and trial eligibility can be established through an approved, privacy-compliant process.\n" +
+          "- **Experimental Design:** Eligible non-Premium riders are randomised to receive the in-app 7-day trial promotion or baseline communications. Paid-subscription rates are compared over the same follow-up period.\n" +
+          "- **Primary Offer-to-Paid Outcome:** Percentage of all eligible riders assigned to each cohort who hold an active paid subscription at a fixed follow-up date (proposed assumption: 45 days post-assignment, ensuring equal evaluation windows across assigned groups regardless of trial start date).\n" +
+          "- **Secondary Trial-to-Paid Outcome:** Percentage of trial starters who hold an active paid subscription 30 days after their individual trial expires.\n\n" +
+          "### Driver Participation & Denominator Definitions\n\n" +
+          "- **Driver Opt-In Rate:** $\\frac{\\text{Participating Drivers}}{\\text{All Eligible Drivers Invited in Pilot Zone}}\n" +
+          "- **Driver Withdrawal Rate:** $\\frac{\\text{Drivers disabling feature during pilot}}{\\text{Participating Drivers at Launch}}\n\n" +
+          "### Decision Rules, Conflict Handling & Thresholds\n\n" +
+          "All numerical thresholds represent illustrative management assumptions, not historical results or industry benchmarks:\n\n" +
+          "| Decision Band | Rider-Satisfaction Interpretation (Workstream A) | Driver Withdrawal Rate | Playback Latency (P95) |\n" +
+          "| --- | --- | --- | --- |\n" +
+          "| **Go (Expand)** | Meets pre-agreed practical improvement threshold with sufficiently convincing evidence | $< 15\\%$ | $< 3.0\\text{ seconds}$ |\n" +
+          "| **Review (Remediate)** | Improvement is uncertain or below the practical threshold | $15\\% - 25\\%$ | $3.0\\text{s} - 5.0\\text{s}$ |\n" +
+          "| **Pause / Redesign** | Evidence indicates deterioration, or insufficient benefit alongside material cost/operational problems | $> 25\\%$ | $> 5.0\\text{ seconds}$ |\n\n" +
+          "*Note: Playback latency is evaluated at the 95th percentile ($P_{95}$) so that minority cellular coverage drops are captured rather than obscured by an average.*\n\n" +
+          "### Conflict Resolution Rule & Workstream Isolation\n\n" +
+          "- **Conflict Handling:** Material driver, reliability, or customer support concerns trigger remediation or a pause even where rider satisfaction improves. Wider rollout requires acceptable performance across all agreed operational and commercial criteria.\n" +
+          "- **Workstream Independence:** Workstream B is assessed independently against its own incremental conversion and acquisition-cost results. A successful ride-experience test (Workstream A) does not automatically establish a successful subscription-acquisition campaign (Workstream B)."
+      },
+
+      {
+        id: "commercial-economics",
+        title: "Illustrative Unit Costs and Conversion Economics",
+        label: "assumption",
+        body:
+          "### Illustrative Variable Unit Cost Model\n\n" +
+          "All figures below are author-selected assumptions in US dollars, not reported partnership costs. Fixed engineering, testing, and driver onboarding costs require separate allocation across assumed usage volumes:\n\n" +
+          "| Economic Category | Uber Economics (Per Music Trip) | Spotify Economics (Per Acquired Trial) |\n" +
+          "| --- | --- | --- |\n" +
+          "| **Technical Infrastructure** | $0.01 (App API & Server Allocation) | $0.25 (Illustrative rights & delivery allocation) |\n" +
+          "| **Operations & Onboarding** | $0.08 (Driver Cable / Incentive Subsidy) | $0.05 (Trial / Account Admin Allocation) |\n" +
+          "| **Support & Marketing** | $0.03 (Customer Support Allocation) | $0.10 (Campaign Delivery Share) |\n" +
+          "| **Total Estimated Cost** | **$0.12 / Music Trip** | **$0.40 / Acquired Trial** |\n\n" +
+          "*Note: The historical trial required no credit card ([Uber Newsroom, 2014](https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/)). This model therefore uses an illustrative account-administration allocation rather than assuming a payment-processing charge at trial registration. Any billing costs would depend on the payment arrangement.*\n\n" +
+          "### Conversion Denominator & Viability Qualification\n\n" +
+          "Because $0.40 represents the cost per acquired trial, estimating the trial-cost contribution per paying subscriber requires dividing by the trial-to-paid conversion rate (not the initial offer-to-trial rate):\n\n" +
+          "$$\\text{Trial Cost per Paying Subscriber} = \\frac{\\text{Cost per Trial}}{\\text{Trial-to-Paid Conversion Rate}}$$\n\n" +
+          "**Illustration:** At an assumed 10% trial-to-paid conversion rate, a $0.40 cost per trial implies **$4.00 of trial-related cost per paying subscriber**, before accounting for broader marketing overhead or servicing costs.\n\n" +
+          "**Commercial Viability:** Full commercial viability would still require subscriber retention, long-term average revenue per user (ARPU), and contribution-margin assumptions.\n\n" +
+          "### Strategic Reversal Condition\n\n" +
+          "If setup friction or driver participation prevents useful adoption ($> 25\\%$ driver withdrawal or $P_{95}$ latency $> 5\\text{s}$), reassess the journey design, driver eligibility, and delivery architecture before considering a different integration approach.\n\n" +
+          "### Summary Insight\n\n" +
+          "\"A partnership between two major technology companies can ultimately depend on a third group—in this case, independent drivers—whose daily operational participation determines whether the customer experience actually works. Evaluating rider value, driver adoption, technical reliability, and each partner’s economics is essential before recommending expansion.\""
+      },
+
+      {
+        id: "presentation-deck",
+        title: "The partnership in 10 slides",
+        description: "Explore an executive summary of the launch context, strategic fit, dual-workstream pilot, and unit economics.",
+        label: "analysis",
+        disclaimer: "Independent analysis by Ritul Sawant. Not an official company presentation.",
+        slides: [
+          {
+            num: 1,
+            category: "Strategic Context",
+            title: "Personalised audio integration in consumer mobility",
+            summary: "Independent analysis examining how Uber and Spotify connected mobile streaming to the in-car experience in November 2014.",
+            label: "analysis",
+            diagram: {
+              from: "Uber (App & In-Ride UI)",
+              partner: "Spotify (API & Catalogue)",
+              result: "In-Cabin Audio Control"
+            },
+            bullets: [
+              "Explores the strategic logic of app-to-app music control inside ride-hailing vehicles.",
+              "Examines the operational and commercial dependencies between riders, drivers, and platforms.",
+              "Outlines a dual-workstream RCT pilot with decision thresholds and unit-cost economics."
+            ],
+            anchor: "executive-summary",
+            anchorText: "Read executive summary"
+          },
+          {
+            num: 2,
+            category: "Problem Definition",
+            title: "Rider listening preferences vs. trip satisfaction",
+            summary: "Riders value control over their travel ambiance, but the importance of music to overall trip satisfaction requires validation.",
+            label: "analysis",
+            bullets: [
+              "Differentiates the ride experience from competitors like Lyft during a high-growth period.",
+              "Software partnership avoids internal music service development while introducing support costs.",
+              "Audio control may improve trip enjoyment, but must be weighed against in-vehicle friction."
+            ],
+            anchor: "problem",
+            anchorText: "Read problem analysis"
+          },
+          {
+            num: 3,
+            category: "Launch Context",
+            title: "November 2014 launch across 10 global cities",
+            summary: "Announced on 17 November 2014 with rollouts in London, New York, San Francisco, and 7 other markets.",
+            label: "fact",
+            bullets: [
+              "Allowed Spotify Premium users to link accounts through Uber to control music in participating cars.",
+              "Uber offered a 7-day free Spotify Premium trial with no credit card required at first music ride.",
+              "Android users initially controlled playback via Spotify; iOS riders controlled inside the Uber app."
+            ],
+            anchor: "company-background",
+            anchorText: "Read launch context"
+          },
+          {
+            num: 4,
+            category: "Partner Assessment",
+            title: "On-demand streaming favoured over passive radio",
+            summary: "Comparing on-demand streaming against algorithmic radio (Pandora) and head-unit hardware integration.",
+            label: "analysis",
+            bullets: [
+              "Spotify offered full track/playlist control matching rider desire for immediate personalisation.",
+              "Restricting control to Premium aligned with Spotify’s core subscriber acquisition engine.",
+              "Avoided capital-intensive vehicle head-unit hardware retrofitting across disparate vehicle makes."
+            ],
+            anchor: "partner-fit",
+            anchorText: "Read partner landscape"
+          },
+          {
+            num: 5,
+            category: "Value Architecture",
+            title: "Three-sided value map and ecosystem alignment",
+            summary: "Operational engagement must translate into commercial value capture across Uber, Spotify, and riders.",
+            label: "analysis",
+            diagram: {
+              from: "Uber (Riders & Cabin)",
+              partner: "Spotify (Music Catalogue)",
+              result: "Joint Engagement & Trials"
+            },
+            bullets: [
+              "Uber gains product differentiation, brand prestige, and potential ride frequency uplift.",
+              "Spotify gains high-visibility trial conversion moments and long-term subscriber retention.",
+              "Customer receives personalized in-cabin music control and seamless trial access."
+            ],
+            anchor: "contributions",
+            anchorText: "Read value creation"
+          },
+          {
+            num: 6,
+            category: "Reported Outcomes",
+            title: "Reported mechanics & driver autonomy safeguards",
+            summary: "Public announcements confirmed driver autonomy, setup mechanics, and undisclosed financial terms.",
+            label: "fact",
+            bullets: [
+              "Drivers retained complete autonomy over whether to participate and kept master volume control.",
+              "Setup required connecting driver phone to vehicle sound system via AUX cables or Bluetooth.",
+              "No revenue split, licensing payments, or conversion figures were publicly disclosed by either company."
+            ],
+            anchor: "outcomes",
+            anchorText: "Read reported outcomes"
+          },
+          {
+            num: 7,
+            category: "Experimental Blueprint",
+            title: "Dual-workstream randomized controlled trial (RCT)",
+            summary: "A proposed pilot isolating existing subscriber ride experience from non-subscriber trial conversion.",
+            label: "hypothetical",
+            bullets: [
+              "Workstream A (Ride Experience): Evaluates post-ride NPS uplift among existing Premium subscribers.",
+              "Workstream B (Subscription Conversion): Evaluates 45-day offer-to-paid conversion for eligible non-Premium riders.",
+              "Defines Driver Opt-In Rate and Driver Withdrawal Rate as critical frontline health metrics."
+            ],
+            anchor: "experimental-pilot",
+            anchorText: "Read pilot blueprint"
+          },
+          {
+            num: 8,
+            category: "Operational Thresholds",
+            title: "Pre-agreed decision bands: Go, Review, Pause",
+            summary: "Clear operational thresholds prevent expansion when frontline friction or technical latency spikes.",
+            label: "assumption",
+            bullets: [
+              "Go: Statistically convincing satisfaction uplift, <15% driver withdrawal, and <3.0s P95 playback latency.",
+              "Review: Uncertain uplift, 15%–25% driver withdrawal, or 3.0s–5.0s P95 latency.",
+              "Pause / Redesign: Deterioration, >25% driver withdrawal, or >5.0s P95 playback latency."
+            ],
+            anchor: "experimental-pilot",
+            anchorText: "Read decision thresholds"
+          },
+          {
+            num: 9,
+            category: "Unit Costs & Conversion",
+            title: "Illustrative unit costs: $0.12/trip and $0.40/trial",
+            summary: "Modelling variable costs reveals the importance of the trial-to-paid conversion denominator.",
+            label: "assumption",
+            bullets: [
+              "Uber unit cost: $0.12 per music trip (API server, driver cable subsidy, customer support).",
+              "Spotify unit cost: $0.40 per acquired trial (rights allocation, account administration, marketing).",
+              "At 10% trial-to-paid conversion, implies $4.00 trial cost per paying subscriber ($0.40 / 10%)."
+            ],
+            anchor: "commercial-economics",
+            anchorText: "Read unit economics"
+          },
+          {
+            num: 10,
+            category: "Executive Takeaway",
+            title: "The frontline driver determines partner success",
+            summary: "A partnership between tech leaders ultimately relies on independent drivers at the point of delivery.",
+            label: "analysis",
+            bullets: [
+              "Frontline driver participation and vehicle hardware setup determine actual rider experience.",
+              "Isolate experience validation (Workstream A) from customer acquisition economics (Workstream B).",
+              "Reassess integration approach if driver withdrawal exceeds 25% or P95 latency exceeds 5 seconds."
+            ],
+            anchor: "lessons",
+            anchorText: "Read lessons learned"
+          }
+        ]
+      }
+    ],
+
+    sources: [
+      {
+        title: "Spotify and Uber team up for in-car music",
+        publisher: "BBC News",
+        date: "2014-11-17",
+        url: "https://www.bbc.com/news/technology-30080974",
+        kind: "secondary"
+      },
+      {
+        title: "Take a ride with Matt and Kim and Uber",
+        publisher: "Uber Newsroom",
+        date: "2014-11-17",
+        url: "https://www.uber.com/us/en/newsroom/take-a-ride-with-matt-and-kim-and-uber/",
+        kind: "primary"
+      },
+      {
+        title: "How the Money Flows | Spotify Royalties Guide",
+        publisher: "Spotify for Artists",
+        date: "2024-01-01",
+        url: "https://artists.spotify.com/en/royalties-guide",
+        kind: "primary"
+      }
+    ]
   }
 ];

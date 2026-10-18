@@ -163,6 +163,8 @@ window.PL = window.PL || {};
     hypothetical: { text: "Hypothetical pilot", desc: "An original proposal or experimental test design, not an announced rollout." },
     assumption: { text: "Modelling assumption", desc: "A scenario-based hypothesis or unit economics assumption." },
     unverified: { text: "Not yet verified", desc: "Reported elsewhere; still to be checked against a primary source." },
+    documented: { text: "Documented benefit", desc: "Verified benefit documented in official published terms." },
+    limitation: { text: "Research limitation", desc: "Identified boundary or limitation of public evidence." },
     todo: { text: TODO_TEXT, desc: "This section has not been researched yet." }
   };
 

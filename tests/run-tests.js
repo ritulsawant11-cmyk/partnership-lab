@@ -89,7 +89,7 @@ PL.caseStudies.forEach(function (c) {
 // Filters
 var all = PL.caseStudies.length;
 check(P.filterProjects(PL.caseStudies, {}).length === all, "no filter returns all");
-check(P.filterProjects(PL.caseStudies, { sector: "Financial services" }).length === 1, "sector filter");
+check(P.filterProjects(PL.caseStudies, { sector: "Financial services" }).length === 2, "sector filter");
 check(P.filterProjects(PL.caseStudies, { type: "Product integration" }).length === 1, "type filter");
 check(P.filterProjects(PL.caseStudies, { sector: "Financial services", type: "Product integration" }).length === 0, "combined filter");
 

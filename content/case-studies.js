@@ -901,5 +901,290 @@ PL.caseStudies = [
         kind: "primary"
       }
     ]
+  },
+
+  {
+    slug: "american-express-wimbledon",
+    title: "Beyond the Logo: American Express × Wimbledon",
+    subtitle: "Partnership value, Cardmember benefits, and an independent benefit-discovery pilot",
+    companies: ["American Express", "Wimbledon (AELTC)"],
+    sector: "Financial services",
+    partnershipType: "Event sponsorship & Cardmember utility",
+    typeNote: "Official payment partner, on-site fan experiences, and conditional Cardmember utility.",
+    summary: "An independent analysis of how American Express activates its Wimbledon partnership, with a proposed test of clearer guidance for Cardmember radio collection.",
+    status: "complete",
+    featured: false,
+    lastReviewed: "2026-10-18",
+
+    diagram: {
+      company1: {
+        name: "American Express",
+        capabilities: [
+          "Premium cardmember base & high average customer spend",
+          "Brand equity in premium lifestyle, travel & entertainment",
+          "On-site operational servicing and benefit fulfilment infrastructure"
+        ]
+      },
+      company2: {
+        name: "AELTC (Wimbledon)",
+        capabilities: [
+          "Global heritage sports brand with strict aesthetic traditions",
+          "Physical tournament grounds and controlled spectator access",
+          "High-volume captive audience during The Championships"
+        ]
+      },
+      joint: {
+        title: "Dual-Track Activation",
+        memberValue: "Inclusive public fan amenities paired with high-touch Cardmember utility and hospitality"
+      }
+    },
+
+    conclusion:
+      "The American Express × Wimbledon partnership demonstrates how high-investment event sponsorships can transcend static branding by combining broad public engagement with tangible cardholder utility. Rather than adding complex priority-pass layers to on-site activations, the greatest commercial and customer opportunity lies in reducing benefit-discovery friction before fans arrive on the grounds.",
+
+    researchLeads: [],
+
+    sections: {
+      executiveSummary: {
+        label: "analysis",
+        body:
+          "**Author:** Ritul Sawant\n" +
+          "**Research Scope:** 2026 Championships\n" +
+          "**Last Reviewed:** 18 October 2026\n\n" +
+          "**Executive Summary:**\n" +
+          "This independent case study examines how American Express combines public-facing Wimbledon experiences with conditional Cardmember benefits. It evaluates the potential value for Amex, the AELTC, and attendees, while distinguishing documented activity from unproven commercial outcomes. Its recommendation is to investigate benefit-discovery friction and, if justified, test clearer pre-visit guidance for radio collection within the existing journey—not introduce a new pass or priority-access system.\n\n" +
+          "**Author Note & Disclaimer:**\n" +
+          "*Independent research by Ritul Sawant. Not affiliated with or endorsed by American Express or the All England Lawn Tennis Club (AELTC). Proposed improvements and evaluation methods represent the author’s independent analysis, not confirmed company plans.*"
+      },
+
+      background: {
+        label: "fact",
+        body:
+          "### Scope of Analysis & Sourced Milestones\n\n" +
+          "This case study focuses on published benefits, access conditions, and organiser-reported activity for the 2026 Championships. Historical context is included only where separately sourced.\n\n" +
+          "- **Partnership Commencement (2019):** American Express launched its official partnership with the AELTC as the Official Payment Partner of The Championships ([AELTC Terms & Conditions, 2026](https://www.wimbledon.com/en_GB/american_express_terms_and_conditions)).\n" +
+          "- **Multi-Year Partnership Extension (2022):** The AELTC and American Express announced a multi-year extension of their partnership, maintaining payment integration and fan engagement activations across the tournament grounds ([AELTC Terms & Conditions, 2026](https://www.wimbledon.com/en_GB/american_express_terms_and_conditions)).\n" +
+          "- **2026 Fan Experience Activations:** The 2026 Championships featured interactive games, photo opportunities, and fan amenities alongside dedicated Cardmember lounges and services ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)).\n" +
+          "- **Organiser-Reported 2026 Scale:** The AELTC reported record total attendance of 537,000 across the 14 days of The Championships 2026, alongside digital audience engagement exceeding 2.7 million matches on official gaming and interactive platforms ([AELTC Media Release, 28 July 2026](https://www.wimbledon.com/en_GB/news/THE_CHAMPIONSHIPS_2026_SETS_NEW_RECORDS_FOR_ATTENDANCE_AND_DIGITAL_AUDIENCE))."
+      },
+
+      problem: {
+        label: "analysis",
+        body:
+          "### Context & Dual-Track Analysis\n\n" +
+          "Partnership activations between American Express and the AELTC operate across two distinct, complementary tracks: broad-reach public engagement and targeted Cardmember utility.\n\n" +
+          '<div class="dual-track-container">' +
+            '<div class="dual-track-card dual-track-card--public">' +
+              '<span class="label label--documented">Inclusive Activations</span>' +
+              '<h4>Public-Facing Fan Experiences</h4>' +
+              '<ul>' +
+                '<li>Interactive tennis games & digital challenges</li>' +
+                '<li>Fan photo opportunities & interactive exhibits</li>' +
+                '<li>General grounds amenities & payment enablement</li>' +
+              '</ul>' +
+              '<p><em>Analytical Interpretation:</em> Opportunities for broad spectator engagement and top-of-funnel brand affinity; requires formal measurement to isolate incremental commercial impact.</p>' +
+            '</div>' +
+            '<div class="dual-track-card dual-track-card--exclusive">' +
+              '<span class="label label--analysis">Exclusive Activations</span>' +
+              '<h4>Conditional Cardmember Benefits</h4>' +
+              '<ul>' +
+                '<li>Complimentary tournament earpiece radios</li>' +
+                '<li>Dedicated Amex Cardmember Lounge access</li>' +
+                '<li>Exclusive on-site spend & hospitality promotions</li>' +
+              '</ul>' +
+              '<p><em>Analytical Interpretation:</em> Delivers direct card utility and perceived membership value; physical capacity limits create potential queuing friction if demand exceeds on-site capacity.</p>' +
+            '</div>' +
+          '</div>\n' +
+          '<p class="text-muted"><small><em>Note: All on-site fan experiences and Cardmember activations require valid admission to The Championships; the partnership does not grant grounds admission. Author’s analytical interpretation.</em></small></p>\n\n' +
+          "### Eligibility & Access Conditions (2026 Championships)\n\n" +
+          "Published terms establish precise access conditions across on-site benefit categories:\n\n" +
+          "- **Grounds Access Dependency:** All Amex perks require a valid Championship admission ticket; card membership does not provide tournament grounds access ([AELTC Terms & Conditions, 2026](https://www.wimbledon.com/en_GB/american_express_terms_and_conditions)).\n" +
+          "- **Complimentary Earpiece Radios:** Available to Cardmembers upon presenting an eligible physical or digital payment card or redemption QR code, strictly while daily stocks last (one per Cardmember per day) ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)). The published terms describe QR-based redemption but do not state that it provides priority access.\n" +
+          "- **Amex Cardmember Lounge:** Subject to venue capacity constraints; operating on a first-come, first-served basis without reservation guarantees ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)).\n" +
+          "- **Historical Spend Offer:** Cardmembers received £10 statement credit when spending £120+ on-site across participating merchandise and food outlets between 29 June and 12 July 2026 ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)). *Historical 2026 offer — ended 12 July 2026.*"
+      },
+
+      fit: {
+        label: "analysis",
+        body:
+          "### Stakeholder Value Exchange\n\n" +
+          "The commercial and strategic viability of the partnership relies on a three-way value exchange between the payment brand, the tournament host, and attendees:\n\n" +
+          '<div class="table-wrap">' +
+          "| Stakeholder | Value Hypothesis to Evaluate | Main Trade-Off |\n" +
+          "| --- | --- | --- |\n" +
+          "| **American Express** | Associates brand with a prestigious global sports property; reinforces card loyalty and perceived membership utility through on-site benefits. | Substantial sponsorship and on-site servicing expenditure; risk of Cardmember disappointment if popular perks reach capacity. |\n" +
+          "| **AELTC (Wimbledon)** | Enhances on-site spectator amenities; leverages partner technology and investment without diluting Wimbledon's traditional heritage. | Relinquishes dedicated physical grounds space; operational dependency on partner execution quality and crowd management. |\n" +
+          "| **Cardmembers** | Tangible on-site value (complimentary radio, lounge respite, spend credit) that validates premium annual card fees. | Queuing friction during peak hours; potential frustration if daily allocations are exhausted before collection. |\n" +
+          "| **General Spectators** | Access to high-quality interactive fan activities and photo opportunities without requiring Amex card ownership. | Visible tiering of premium spaces and services on-site. |\n" +
+          "</div>\n\n" +
+          "### Evaluating the Dual-Track Architecture\n\n" +
+          "By separating general fan engagement from premium cardmember utility, American Express avoids alienating the broader public while still delivering tangible differentiation for cardholders. However, the operational delivery of exclusive perks (such as radio kiosks and lounge entry) must be managed carefully within Wimbledon’s constrained physical environment."
+      },
+
+      outcomes: {
+        label: "fact",
+        body:
+          "### Documented Activity & Organiser-Reported Metrics (2026)\n\n" +
+          "The following metrics reflect official organiser communications and published terms for the 2026 tournament. They indicate delivery volume and operational activity rather than verified commercial profitability or net customer acquisition:\n\n" +
+          "- **Total Spectator Attendance:** Organiser-reported 537,000 total attendees across the 14 days of The Championships 2026 ([AELTC Media Release, 28 July 2026](https://www.wimbledon.com/en_GB/news/THE_CHAMPIONSHIPS_2026_SETS_NEW_RECORDS_FOR_ATTENDANCE_AND_DIGITAL_AUDIENCE)).\n" +
+          "- **Digital & Fan Engagement Scale:** The AELTC reported a 104% increase in on-site fan experience participants and over 2.7 million matches played across official interactive and gaming features during the tournament period ([AELTC Media Release, 28 July 2026](https://www.wimbledon.com/en_GB/news/THE_CHAMPIONSHIPS_2026_SETS_NEW_RECORDS_FOR_ATTENDANCE_AND_DIGITAL_AUDIENCE)). *Note: These are organiser-reported engagement counts; they do not measure card spend, member retention, or commercial ROI.*\n" +
+          "- **On-Site Fulfilment Footprint:** Multiple dedicated Cardmember service kiosks, complimentary earpiece radio distribution points, and a multi-level hospitality lounge operated throughout the 14-day event ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)).\n" +
+          "- **Cardmember Spend Promotion Delivery:** Delivery of the £10 statement credit incentive on £120+ cumulative spend across official Wimbledon hospitality and retail outlets ([American Express UK, 2026](https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/)). *Historical 2026 offer — ended 12 July 2026.*"
+      },
+
+      interpretation: {
+        label: "analysis",
+        body:
+          "### Independent Analytical Interpretation\n\n" +
+          "American Express’s activation at Wimbledon is often cited as a benchmark for experiential sponsorship. However, an objective commercial assessment requires distinguishing between visible delivery volume and measurable business value.\n\n" +
+          "1. **Volume vs. Value:** Distributing tens of thousands of earpiece radios demonstrates impressive logistical capability, but high uptake does not automatically prove incremental card spend, renewal probability, or customer acquisition.\n" +
+          "2. **The Capacity Conundrum:** When exclusive cardholder perks are deployed in high-density physical environments, demand frequently outstrips capacity. Restricting access through first-come, first-served queues protects venue comfort but risks generating friction among high-tier cardholders.\n" +
+          "3. **Sponsorship Beyond Signage:** The dual-track strategy succeeds in creating public goodwill through accessible games while defending premium positioning via curated lounges. The primary strategic challenge is ensuring that benefit discovery is frictionless before attendees enter the grounds."
+      },
+
+      risks: {
+        label: "analysis",
+        body:
+          "### Operational Dependencies & Risk Considerations\n\n" +
+          "- **Physical Space & Capacity Caps:** Fixed square footage within the AELTC grounds restricts lounge expansion and kiosk placement, creating inevitable queuing bottlenecks during peak rain breaks or show-court intervals.\n" +
+          "- **Supply Exhaustion Friction:** Complimentary radios are distributed 'while daily stocks last'. High-value cardholders arriving late in the afternoon face potential disappointment if daily inventory is exhausted.\n" +
+          "- **Grounds Access Dependency:** Because card membership cannot guarantee Championship admission, marketing communications must clearly state that perks are contingent on holding a valid ticket.\n" +
+          "- **Attribution Ambiguity:** Separating the commercial uplift generated by Wimbledon sponsorship from broader summer lifestyle marketing campaigns remains difficult without controlled testing."
+      },
+
+      lessons: {
+        label: "analysis",
+        body:
+          "### Strategic Lessons for Brand & Event Partnerships\n\n" +
+          "- **Separate Mass Affinity from Member Utility:** Provide open-access touchpoints for general attendees to build long-term brand equity, while reserving tangible, friction-reducing services for cardholders.\n" +
+          "- **Fix Discovery Before Overhauling Delivery:** When perk redemption encounters bottlenecks, the solution is rarely adding complex priority passes or VIP tiers. Instead, providing clear, pre-visit expectations and location transparency resolves most operational friction.\n" +
+          "- **Ground Success in Measurable Decision Rules:** Event partnerships should establish explicit operational targets (e.g. queue wait times, benefit collection rates, net satisfaction delta) before expanding on-site commitments."
+      }
+    },
+
+    parties: [
+      {
+        name: "American Express",
+        role: "company",
+        note: "Official Payment Partner & Hospitality Host",
+        contributes: [
+          "Payment processing infrastructure & contactless enablement",
+          "Funding and management of fan experience activations",
+          "Cardmember Lounge hospitality & complimentary radio distribution",
+          "Merchant spend promotions & statement credit funding"
+        ],
+        gains: [
+          "Premium global brand association with Wimbledon & AELTC",
+          "Direct card usage incentives (£120 spend promotion)",
+          "Perceived card membership retention and satisfaction boost",
+          "Risks: Major sponsorship overhead, on-site queue friction & capacity constraints"
+        ]
+      },
+      {
+        name: "AELTC (Wimbledon)",
+        role: "company",
+        note: "Tournament Organiser & Historic Sports Brand",
+        contributes: [
+          "Exclusive global tournament branding & payment designation",
+          "Physical footprint for fan experiences and Cardmember lounges",
+          "Captive attendance base of 530,000+ passionate tennis spectators"
+        ],
+        gains: [
+          "Commercial sponsorship revenue and payment enablement",
+          "Enhanced visitor experience through interactive games and radios",
+          "High-standard hospitality execution aligned with tournament heritage",
+          "Risks: Congestion around branded kiosks, brand commercialisation sensitivities"
+        ]
+      },
+      {
+        name: "Cardmembers & Fans",
+        role: "customer",
+        note: "Ticket-Holding Spectators & Amex Cardholders",
+        contributes: [
+          "Ticket purchase and attendance at The Championships",
+          "On-site retail and hospitality spending",
+          "Card account linkage and QR code presentation"
+        ],
+        gains: [
+          "Cardmembers: Complimentary earpiece radio, lounge respite, £10 spend credit",
+          "Fans: Free interactive games, photo opportunities, and grounds amenities",
+          "Risks: Radio stock exhaustion, lounge queues, requirement for valid admission ticket"
+        ]
+      }
+    ],
+
+    customSections: [
+      {
+        id: "experimental-pilot",
+        title: "Independent Benefit-Discovery Pilot Proposal",
+        label: "hypothetical",
+        body:
+          "### Benefit-Discovery Friction: The Real Bottleneck\n\n" +
+          "On-site observation and terms analysis indicate that benefit-collection friction stems primarily from attendee uncertainty regarding kiosk locations, collection hours, and daily stock availability. Introducing a secondary priority pass or VIP fast-track queue would exacerbate grounds congestion and create operational complexity.\n\n" +
+          "Instead, this independent proposal outlines a **Controlled Benefit-Discovery Pilot**: testing whether clearer digital pre-visit guidance within existing Cardmember touchpoints improves collection ease and attendee satisfaction without altering physical queue structures.\n\n" +
+          '<div class="journey-comparison-container">' +
+            '<div class="jc-grid">' +
+              '<div class="jc-col jc-col--existing">' +
+                '<span class="label label--analysis">Existing Process</span>' +
+                '<h4>Current Radio Collection Flow</h4>' +
+                '<div class="jc-step"><span class="jc-step-num">1</span> <strong>Discover Perks:</strong> Attendee searches Amex benefits site or notices on-site signs.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">2</span> <strong>Review Eligibility:</strong> Discovers requirement for ticket and eligible Amex card on-site.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">3</span> <strong>Locate Kiosk:</strong> Searches grounds map or navigates physically to find distribution points.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">4</span> <strong>Join Queue:</strong> Queues at kiosk; presents physical card or QR code; collects radio while stocks last.</div>' +
+              '</div>' +
+              '<div class="jc-col jc-col--proposed">' +
+                '<span class="label label--hypothetical">Proposed Pilot</span>' +
+                '<h4>Clearer Pre-Visit Guidance Flow</h4>' +
+                '<div class="jc-step"><span class="jc-step-num">1</span> <strong>Pre-Visit Trigger:</strong> Cardmember receives targeted pre-tournament email or app notification 24h prior.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">2</span> <strong>Clear Guidance:</strong> Upfront map pins, live stock status indicators, and collection window details.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">3</span> <strong>Direct Navigation:</strong> Arrives at optimal kiosk during off-peak windows with realistic expectations.</div>' +
+                '<div class="jc-step"><span class="jc-step-num">4</span> <strong>Unchanged Physical Queue:</strong> Same physical redemption mechanism; no fast-track pass required.</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>\n\n' +
+          "### Pilot Evaluation Scorecard\n\n" +
+          "To rigorously determine whether pre-visit guidance improves the fan experience, the proposed pilot measures specific operational and perceptual metrics across assigned cohorts:\n\n" +
+          '<div class="table-wrap">' +
+          "| Role / Dimension | Proposed Pilot Metric | Measurement Method |\n" +
+          "| --- | --- | --- |\n" +
+          "| **Cardmember Discovery** | % of ticket-holding Cardmembers aware of radio perk prior to entering grounds | Randomised post-visit survey across attendees |\n" +
+          "| **Operational Queuing** | Average queue wait time (minutes) at primary Amex distribution kiosks | Timed sampling across peak vs. off-peak intervals |\n" +
+          "| **Inventory Distribution** | % of daily radio allocation distributed smoothly across tournament day | Kiosk hourly scan and inventory distribution logs |\n" +
+          "| **Satisfaction & Ease** | Net collection ease score and satisfaction delta vs. control cohort | Post-redemption 1-question pulse prompt (1–5 scale) |\n" +
+          "| **Support & Inquiries** | Rate of on-site kiosk inquiries regarding stock depletion or eligibility rules | Staff incident and inquiry tracking logs |\n" +
+          "</div>\n\n" +
+          "### Decision Rules & Feasibility Guardrails\n\n" +
+          "- **Continue / Roll Out:** If the pre-visit guidance cohort demonstrates a $\\ge 15\\%$ increase in collection ease score, reduces peak queue waiting times by $\\ge 20\\%$, and generates zero increase in on-site staff escalations.\n" +
+          "- **Refine / Halt:** If guidance creates concentrated opening-hour surges that overwhelm kiosks early, or fails to measurably shift satisfaction relative to baseline."
+      }
+    ],
+
+    sources: [
+      {
+        title: "American Express Terms and Conditions",
+        publisher: "All England Lawn Tennis Club (AELTC)",
+        date: "2026-06-01",
+        url: "https://www.wimbledon.com/en_GB/american_express_terms_and_conditions",
+        kind: "primary",
+        accessed: "2026-10-18"
+      },
+      {
+        title: "The Championships 2026 sets new records for attendance and digital audience",
+        publisher: "All England Lawn Tennis Club (AELTC)",
+        date: "2026-07-28",
+        url: "https://www.wimbledon.com/en_GB/news/THE_CHAMPIONSHIPS_2026_SETS_NEW_RECORDS_FOR_ATTENDANCE_AND_DIGITAL_AUDIENCE",
+        kind: "primary",
+        accessed: "2026-10-18"
+      },
+      {
+        title: "Wimbledon Amex Cardmember Benefits",
+        publisher: "American Express UK",
+        date: "2026-06-01",
+        url: "https://www.americanexpress.com/en-gb/benefits/membership/wimbledon/",
+        kind: "primary",
+        accessed: "2026-10-18"
+      }
+    ]
   }
 ];
+

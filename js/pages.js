@@ -45,11 +45,12 @@ window.PL = window.PL || {};
   }
 
   function toc(items) {
-    return '<nav class="toc" aria-label="On this page"><p class="toc-title">Chapters & Sections</p><ol>' +
-      items.map(function (t) {
-        var cls = t[2] ? ' class="toc-chapter"' : '';
-        return '<li' + cls + '><a href="#' + t[0] + '" data-scroll-to="' + t[0] + '">' + esc(t[1]) + "</a></li>";
-      }).join("") + "</ol></nav>";
+    var list = items.map(function (t) {
+      var cls = t[2] ? ' class="toc-chapter"' : '';
+      return '<li' + cls + '><a href="#' + t[0] + '" data-scroll-to="' + t[0] + '">' + esc(t[1]) + "</a></li>";
+    }).join("");
+    return '<details class="toc-mobile-details"><summary class="toc-mobile-summary">On this page &darr;</summary><ol>' + list + '</ol></details>' +
+      '<nav class="toc" aria-label="On this page"><p class="toc-title">Chapters & Sections</p><ol>' + list + "</ol></nav>";
   }
 
   function howToRead() {

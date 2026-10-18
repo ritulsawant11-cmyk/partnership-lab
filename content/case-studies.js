@@ -1009,14 +1009,12 @@ PL.caseStudies = [
         body:
           "### Stakeholder Value Exchange\n\n" +
           "The commercial and strategic viability of the partnership relies on a three-way value exchange between the payment brand, the tournament host, and attendees:\n\n" +
-          '<div class="table-wrap">' +
           "| Stakeholder | Value Hypothesis to Evaluate | Main Trade-Off |\n" +
           "| --- | --- | --- |\n" +
           "| **American Express** | Associates brand with a prestigious global sports property; reinforces card loyalty and perceived membership utility through on-site benefits. | Substantial sponsorship and on-site servicing expenditure; risk of Cardmember disappointment if popular perks reach capacity. |\n" +
           "| **AELTC (Wimbledon)** | Enhances on-site spectator amenities; leverages partner technology and investment without diluting Wimbledon's traditional heritage. | Relinquishes dedicated physical grounds space; operational dependency on partner execution quality and crowd management. |\n" +
           "| **Cardmembers** | Tangible on-site value (complimentary radio, lounge respite, spend credit) that validates premium annual card fees. | Queuing friction during peak hours; potential frustration if daily allocations are exhausted before collection. |\n" +
-          "| **General Spectators** | Access to high-quality interactive fan activities and photo opportunities without requiring Amex card ownership. | Visible tiering of premium spaces and services on-site. |\n" +
-          "</div>\n\n" +
+          "| **General Spectators** | Access to high-quality interactive fan activities and photo opportunities without requiring Amex card ownership. | Visible tiering of premium spaces and services on-site. |\n\n" +
           "### Evaluating the Dual-Track Architecture\n\n" +
           "By separating general fan engagement from premium cardmember utility, American Express avoids alienating the broader public while still delivering tangible differentiation for cardholders. However, the operational delivery of exclusive perks (such as radio kiosks and lounge entry) must be managed carefully within Wimbledon’s constrained physical environment."
       },
@@ -1144,15 +1142,13 @@ PL.caseStudies = [
           '</div>\n\n' +
           "### Pilot Evaluation Scorecard\n\n" +
           "To rigorously determine whether pre-visit guidance improves the fan experience, the proposed pilot measures specific operational and perceptual metrics across assigned cohorts:\n\n" +
-          '<div class="table-wrap">' +
           "| Role / Dimension | Proposed Pilot Metric | Measurement Method |\n" +
           "| --- | --- | --- |\n" +
           "| **Cardmember Discovery** | % of ticket-holding Cardmembers aware of radio perk prior to entering grounds | Randomised post-visit survey across attendees |\n" +
           "| **Operational Queuing** | Average queue wait time (minutes) at primary Amex distribution kiosks | Timed sampling across peak vs. off-peak intervals |\n" +
           "| **Inventory Distribution** | % of daily radio allocation distributed smoothly across tournament day | Kiosk hourly scan and inventory distribution logs |\n" +
           "| **Satisfaction & Ease** | Net collection ease score and satisfaction delta vs. control cohort | Post-redemption 1-question pulse prompt (1–5 scale) |\n" +
-          "| **Support & Inquiries** | Rate of on-site kiosk inquiries regarding stock depletion or eligibility rules | Staff incident and inquiry tracking logs |\n" +
-          "</div>\n\n" +
+          "| **Support & Inquiries** | Rate of on-site kiosk inquiries regarding stock depletion or eligibility rules | Staff incident and inquiry tracking logs |\n\n" +
           "### Decision Rules & Feasibility Guardrails\n\n" +
           "- **Continue / Roll Out:** If the pre-visit guidance cohort demonstrates a $\\ge 15\\%$ increase in collection ease score, reduces peak queue waiting times by $\\ge 20\\%$, and generates zero increase in on-site staff escalations.\n" +
           "- **Refine / Halt:** If guidance creates concentrated opening-hour surges that overwhelm kiosks early, or fails to measurably shift satisfaction relative to baseline."

@@ -110,6 +110,11 @@ window.PL = window.PL || {};
         return '<blockquote class="callout--quote"><p>' + inline(lines.map(function (l) { return l.replace(/^>\s?/, ''); }).join(' ')) + '</p></blockquote>';
       }
 
+      // Raw HTML blocks (e.g. custom container divs, alert wrappers)
+      if (/^<(div|details|figure|article|section|table|p)[\s>]/.test(lines[0])) {
+        return lines.join(" ");
+      }
+
       // Horizontal rule
       if (lines.length === 1 && /^---+$/.test(lines[0])) {
         return '<hr class="rule">';
